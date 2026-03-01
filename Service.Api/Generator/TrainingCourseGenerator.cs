@@ -16,7 +16,6 @@ public static class TrainingCourseGenerator
     /// </summary>
     static TrainingCourseGenerator()
     {
-        // Справочник наименований курсов
         var courseNames = new[]
         {
             "ASP.NET Core разработка",
@@ -104,13 +103,5 @@ public static class TrainingCourseGenerator
         var course = _courseFaker.Generate();
         course.Id = id;
         return course;
-    }
-
-    /// <summary>
-    /// Генерирует один учебный курс
-    /// </summary>
-    public static TrainingCourse GenerateOne()
-    {
-        return _courseFaker.Generate();
     }
 }

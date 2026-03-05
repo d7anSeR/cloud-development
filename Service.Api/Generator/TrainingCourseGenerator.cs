@@ -63,7 +63,7 @@ public static class TrainingCourseGenerator
                 {
                     firstName = f.PickRandom(femaleFirstNames);
                     patronymic = f.PickRandom(femalePatronymics);
-                    
+                
                     string femaleLastName = lastName.EndsWith("ов") || lastName.EndsWith("ев") 
                         ? lastName + "а" 
                         : lastName + "а";

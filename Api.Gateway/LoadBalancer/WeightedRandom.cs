@@ -21,7 +21,7 @@ public class WeightedRandom : ILoadBalancer
     
         if (!section.Exists())
         {
-            throw new ConfigurationErrorsException(
+            throw new InvalidOperationException(
                 $"Required configuration section '{section.Path}' was not found. " +
                 "Please check your appsettings.json or environment variables.");
         }

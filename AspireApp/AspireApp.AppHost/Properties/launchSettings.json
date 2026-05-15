@@ -24,6 +24,18 @@
         "DOTNET_DASHBOARD_OTLP_ENDPOINT_URL": "http://localhost:19066",
         "DOTNET_RESOURCE_SERVICE_ENDPOINT_URL": "http://localhost:20044"
       }
+    },
+    "SNS+MinioS3": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:17145;http://localhost:15026",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "SNS+MinioS3",
+        "DOTNET_ENVIRONMENT": "SNS+MinioS3",
+        "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL": "https://localhost:21138",
+        "ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL": "https://localhost:22278"
+      }
     }
   }
 }

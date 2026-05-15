@@ -6,13 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-  	<PackageReference Include="Bogus" Version="35.6.5"/>
-    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.100.14" />
-    <PackageReference Include="Aspire.StackExchange.Redis.DistributedCaching" Version="8.0.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Bogus" Version="35.6.5"/>
+		<PackageReference Include="Aspire.StackExchange.Redis.DistributedCaching" Version="9.5.2"/>
+	</ItemGroup>
 
-  <ItemGroup>
+	<ItemGroup>
     <ProjectReference Include="..\AspireApp\AspireApp.ServiceDefaults\AspireApp.ServiceDefaults.csproj" />
   </ItemGroup>
 

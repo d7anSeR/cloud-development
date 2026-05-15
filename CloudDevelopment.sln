@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Api", "Service.Api\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Gateway", "Api.Gateway\Api.Gateway.csproj", "{918C028A-F3FC-4A78-B9F2-199193B8949E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event.Sink", "Event.Sink\Event.Sink.csproj", "{D048249A-40D1-4F62-BED8-BF04F107562F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{918C028A-F3FC-4A78-B9F2-199193B8949E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{918C028A-F3FC-4A78-B9F2-199193B8949E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{918C028A-F3FC-4A78-B9F2-199193B8949E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D048249A-40D1-4F62-BED8-BF04F107562F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D048249A-40D1-4F62-BED8-BF04F107562F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D048249A-40D1-4F62-BED8-BF04F107562F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D048249A-40D1-4F62-BED8-BF04F107562F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

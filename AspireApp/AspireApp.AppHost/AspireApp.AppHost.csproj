@@ -13,18 +13,13 @@
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" Version="9.5.2" />
-    <PackageReference Include="Aspire.Hosting.AWS" Version="9.0.0" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="9.5.2" />
-    <PackageReference Include="BCat.Hosting.MinIO" Version="8.2.2" />
-
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Api.Gateway\Api.Gateway.csproj" />
     <ProjectReference Include="..\..\Client.Wasm\Client.Wasm.csproj" />
     <ProjectReference Include="..\..\Service.Api\Service.Api.csproj" />
-    <ProjectReference Include="..\..\Event.Sink\Event.Sink.csproj" />
-
   </ItemGroup>
 
 </Project>

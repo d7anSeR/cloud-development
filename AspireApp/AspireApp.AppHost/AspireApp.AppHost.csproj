@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <Sdk Name="Aspire.AppHost.Sdk" Version="9.5.2" />
 
@@ -14,12 +14,21 @@
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" Version="9.5.2" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="9.5.2" />
+    <PackageReference Include="CommunityToolkit.Aspire.Hosting.Minio" Version="9.9.0" />
+    <PackageReference Include="LocalStack.Aspire.Hosting" Version="9.5.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Api.Gateway\Api.Gateway.csproj" />
     <ProjectReference Include="..\..\Client.Wasm\Client.Wasm.csproj" />
+    <ProjectReference Include="..\..\File.Service\File.Service.csproj" />
     <ProjectReference Include="..\..\Service.Api\Service.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="CloudFormation\training-course-template.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

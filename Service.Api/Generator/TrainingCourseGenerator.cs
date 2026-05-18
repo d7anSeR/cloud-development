@@ -40,13 +40,13 @@ public static class TrainingCourseGenerator
             .RuleFor(c => c.TeacherFullName, f =>
             {
                 var gender = f.PickRandom<Name.Gender>();
-            
+
                 var firstName = f.Name.FirstName(gender);
                 var lastName = f.Name.LastName(gender);
-                
+
                 var patronymicSuffix = gender == Name.Gender.Male ? "ович" : "овна";
                 var patronymic = f.Name.FirstName(Name.Gender.Male) + patronymicSuffix;
-                
+
                 return $"{lastName} {firstName} {patronymic}";
             })
             .RuleFor(c => c.StartDate, f =>

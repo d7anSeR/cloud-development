@@ -18,7 +18,7 @@ public class WeightedRandom : ILoadBalancer
     {
         _services = services;
         var section = configuration.GetSection("LoadBalancer:WeightedRandom:Weights");
-    
+
         if (!section.Exists())
         {
             throw new InvalidOperationException(
@@ -45,6 +45,6 @@ public class WeightedRandom : ILoadBalancer
             return new OkResponse<ServiceHostAndPort>(services[_values.First()].HostAndPort);
         }
     }
-    
+
     public void Release(ServiceHostAndPort hostAndPort) { }
 }
